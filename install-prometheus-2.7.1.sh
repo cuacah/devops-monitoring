@@ -11,7 +11,7 @@ sudo chown prometheus:prometheus /var/lib/prometheus
 
 #Pull down the tar.gz file from the Prometheus downloads page:
 cd /tmp/
-wget https:#github.com/prometheus/prometheus/releases/download/v2.7.1/prometheus-2.7.1.linux-amd64.tar.gz
+wget https://github.com/prometheus/prometheus/releases/download/v2.7.1/prometheus-2.7.1.linux-amd64.tar.gz
 
 #Extract the files:
 tar -xvf prometheus-2.7.1.linux-amd64.tar.gz
