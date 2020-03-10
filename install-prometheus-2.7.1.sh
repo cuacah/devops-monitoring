@@ -30,7 +30,7 @@ sudo chown prometheus:prometheus /usr/local/bin/promtool
 
 #Create the service file:
 sudo touch /etc/systemd/system/prometheus.service
-sudo cat <<EOT>> /etc/systemd/system/prometheus.service
+sudo tee -a /etc/systemd/system/prometheus.service <<EOF
 [Unit]
 Description=Prometheus
 Wants=network-online.target
@@ -48,7 +48,7 @@ ExecStart=/usr/local/bin/prometheus \
 
 [Install]
 WantedBy=multi-user.target
-EOT
+EOF
 
 #Reload systemd:
 sudo systemctl daemon-reload
