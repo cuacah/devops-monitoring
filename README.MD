@@ -1,5 +1,6 @@
 # Prometheus & AlertManager
 Action the below after you install AlertManager
+
 Stop Prometheus, and then update the Prometheus configuration file to use Alertmanager:
 
     sudo systemctl stop prometheus
