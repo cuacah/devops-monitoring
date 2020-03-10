@@ -1,7 +1,7 @@
+#!/bin/bash
 #Create a system user for Prometheus
 sudo useradd --no-create-home --shell /bin/false prometheus
 
-#!/bin/bash
 #Create the directoriesto store configuration files and libraries:
 sudo mkdir /etc/prometheus
 sudo mkdir /var/lib/prometheus
