@@ -1,6 +1,6 @@
 
-# DevOps Monitoring (Prometheus, Grafana)
-These package contain install script for the following:
+# DevOps Monitoring (Prometheus, Grafana) - Pull-based Monitoring
+These package contain install script for the following
 
  - Prometheus v.2.7.1 (rpm)
  - AlertManager 0.16.1 (tar.gz)
@@ -63,5 +63,5 @@ Stop Prometheus, add the endpoint to the Prometheus configuration file and add t
       - targets: ['localhost:8080']
 
 Start Prometheus
-                
+
     sudo systemctl start prometheus
