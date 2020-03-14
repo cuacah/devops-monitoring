@@ -65,3 +65,12 @@ Stop Prometheus, add the endpoint to the Prometheus configuration file and add t
 Start Prometheus
 
     sudo systemctl start prometheus
+
+
+
+
+Port:
+Prometheus :9090
+AlertManager :9093
+Grafana :3000
+NodeExporter :9100
