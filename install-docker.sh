@@ -26,4 +26,5 @@ sudo systemctl start docker && sudo systemctl enable docker
 #  device-mapper-persistent-data \
 #  lvm2
 #sudo yum install docker -y
+#sudo usermod -aG docker ec2-user
 #sudo systemctl start docker && sudo systemctl enable docker
