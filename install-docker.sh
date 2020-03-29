@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Installing Docker Community Edition via yum
+#Installing Docker Community Edition via yum on CentOS
 
 #Add Utilities needed for Docker
 sudo yum install -y yum-utils \
@@ -20,3 +20,10 @@ sudo usermod -aG docker ec2-user
 
 #Enable and Start Docker
 sudo systemctl start docker && sudo systemctl enable docker
+
+#On Amazon Linux AMI you only need to run the following:
+#sudo yum install -y yum-utils \
+#  device-mapper-persistent-data \
+#  lvm2
+#sudo yum install docker -y
+#sudo systemctl start docker && sudo systemctl enable docker
